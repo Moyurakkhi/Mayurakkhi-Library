@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ময়ূরাক্ষী — পাঠাগার</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans Bengali", "SolaimanLipi", sans-serif;
+      background: #f7f4ee;
+      color: #29251f;
+    }
+
+    header {
+      background: #252018;
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 17px;
+      color: #d8d0c2;
+    }
+
+    nav {
+      background: #332c22;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 45px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #6d665c;
+      line-height: 1.8;
+    }
+
+    .search {
+      margin: 30px auto;
+      max-width: 600px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 15px 20px;
+      border: 1px solid #d2c9bb;
+      border-radius: 30px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .books {
+      max-width: 1100px;
+      margin: 40px auto 70px;
+      padding: 0 20px;
+    }
+
+    .books h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 25px;
+    }
+
+    .book {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .cover {
+      height: 280px;
+      background: #ddd5c8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #756c60;
+      font-size: 18px;
+    }
+
+    .book-info {
+      padding: 18px;
+    }
+
+    .book-info h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .book-info p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #252018;
+      color: #cfc7bb;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ময়ূরাক্ষী</h1>
+    <p>বই, পাঠ ও ভালোবাসার একটি ছোট্ট জগৎ</p>
+  </header>
+
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#books">বইসমূহ</a>
+    <a href="#">লেখক</a>
+    <a href="#">আমাদের সম্পর্কে</a>
+  </nav>
+
+  <section class="hero">
+    <h2>স্বাগতম ময়ূরাক্ষীতে</h2>
+
+    <p>
+      বিভিন্ন লেখকের প্রিয় বইগুলোকে এক জায়গায়
+      সাজিয়ে রাখার একটি ব্যক্তিগত পাঠাগার।
+    </p>
+
+    <div class="search">
+      <input type="text" placeholder="বই বা লেখকের নাম লিখুন...">
+    </div>
+  </section>
+
+  <section class="books" id="books">
+
+    <h2>আমাদের বইসমূহ</h2>
+
+    <div class="book-grid">
+
+      <div class="book">
+        <div class="cover">বইয়ের প্রচ্ছদ</div>
+        <div class="book-info">
+          <h3>বইয়ের নাম</h3>
+          <p>লেখক: লেখকের নাম</p>
+        </div>
+      </div>
+
+      <div class="book">
+        <div class="cover">বইয়ের প্রচ্ছদ</div>
+        <div class="book-info">
+          <h3>বইয়ের নাম</h3>
+          <p>লেখক: লেখকের নাম</p>
+        </div>
+      </div>
+
+      <div class="book">
+        <div class="cover">বইয়ের প্রচ্ছদ</div>
+        <div class="book-info">
+          <h3>বইয়ের নাম</h3>
+          <p>লেখক: লেখকের নাম</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 ময়ূরাক্ষী — একটি ব্যক্তিগত পাঠাগার</p>
+  </footer>
+
+</body>
+</html>
